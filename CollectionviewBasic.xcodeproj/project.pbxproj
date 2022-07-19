@@ -13,6 +13,8 @@
 		C9D5D34B28860096002E4513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D5D34928860096002E4513 /* Main.storyboard */; };
 		C9D5D34D28860097002E4513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D5D34C28860097002E4513 /* Assets.xcassets */; };
 		C9D5D35028860097002E4513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D5D34E28860097002E4513 /* LaunchScreen.storyboard */; };
+		C9D5D35D2886049A002E4513 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D5D35B2886049A002E4513 /* MyCollectionViewCell.swift */; };
+		C9D5D35E2886049A002E4513 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D5D35C2886049A002E4513 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C9D5D34C28860097002E4513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D5D34F28860097002E4513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9D5D35128860097002E4513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D5D35B2886049A002E4513 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9D5D35C2886049A002E4513 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		C9D5D34228860096002E4513 /* CollectionviewBasic */ = {
 			isa = PBXGroup;
 			children = (
-				C9D5D34328860096002E4513 /* AppDelegate.swift */,
-				C9D5D34528860096002E4513 /* SceneDelegate.swift */,
-				C9D5D34728860096002E4513 /* ViewController.swift */,
-				C9D5D34928860096002E4513 /* Main.storyboard */,
-				C9D5D34C28860097002E4513 /* Assets.xcassets */,
-				C9D5D34E28860097002E4513 /* LaunchScreen.storyboard */,
-				C9D5D35128860097002E4513 /* Info.plist */,
+				C9D5D35A2886019C002E4513 /* Models */,
+				C9D5D3592886018E002E4513 /* Controllers */,
+				C9D5D35828860185002E4513 /* Views */,
+				C9D5D3572886011E002E4513 /* SupportFiles */,
 			);
 			path = CollectionviewBasic;
+			sourceTree = "<group>";
+		};
+		C9D5D3572886011E002E4513 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C9D5D34328860096002E4513 /* AppDelegate.swift */,
+				C9D5D34528860096002E4513 /* SceneDelegate.swift */,
+				C9D5D34C28860097002E4513 /* Assets.xcassets */,
+				C9D5D35128860097002E4513 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C9D5D35828860185002E4513 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9D5D34928860096002E4513 /* Main.storyboard */,
+				C9D5D35C2886049A002E4513 /* MyCollectionViewCell.xib */,
+				C9D5D34E28860097002E4513 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9D5D3592886018E002E4513 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9D5D34728860096002E4513 /* ViewController.swift */,
+				C9D5D35B2886049A002E4513 /* MyCollectionViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9D5D35A2886019C002E4513 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +165,7 @@
 			files = (
 				C9D5D35028860097002E4513 /* LaunchScreen.storyboard in Resources */,
 				C9D5D34D28860097002E4513 /* Assets.xcassets in Resources */,
+				C9D5D35E2886049A002E4513 /* MyCollectionViewCell.xib in Resources */,
 				C9D5D34B28860096002E4513 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +179,7 @@
 			files = (
 				C9D5D34828860096002E4513 /* ViewController.swift in Sources */,
 				C9D5D34428860096002E4513 /* AppDelegate.swift in Sources */,
+				C9D5D35D2886049A002E4513 /* MyCollectionViewCell.swift in Sources */,
 				C9D5D34628860096002E4513 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ALTGSDSZNG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CollectionviewBasic/Info.plist;
+				INFOPLIST_FILE = CollectionviewBasic/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ALTGSDSZNG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CollectionviewBasic/Info.plist;
+				INFOPLIST_FILE = CollectionviewBasic/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
